@@ -10,3 +10,4 @@ LICENSE
 .editorconfig
 .prettierrc
 .eslintcache
+run.sh
