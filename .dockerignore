@@ -5,6 +5,7 @@ node_modules
 .github
 .vscode
 .idea
+dist
 *.md
 LICENSE
 .editorconfig
