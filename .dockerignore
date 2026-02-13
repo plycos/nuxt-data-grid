@@ -1,0 +1,12 @@
+node_modules
+.output
+.nuxt
+.git
+.github
+.vscode
+.idea
+*.md
+LICENSE
+.editorconfig
+.prettierrc
+.eslintcache
