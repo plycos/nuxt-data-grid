@@ -13,6 +13,7 @@ const columns = computed<DataTableColumnDef<Employee>[]>(() => [
   {
     accessorKey: 'name',
     header: ({ column }) => useSortingHeader<Employee>(column, 'Name'),
+    cell: ({ row }) => useTruncateCellText(row.getValue('name')),
     enableSorting: true,
     meta: {
       fr: 2,
@@ -22,6 +23,7 @@ const columns = computed<DataTableColumnDef<Employee>[]>(() => [
   {
     accessorKey: 'email',
     header: ({ column }) => useSortingHeader<Employee>(column, 'Email'),
+    cell: ({ row }) => useTruncateCellText(row.getValue('email')),
     enableSorting: true,
     meta: {
       fr: 2,
@@ -31,6 +33,7 @@ const columns = computed<DataTableColumnDef<Employee>[]>(() => [
   {
     accessorKey: 'department',
     header: ({ column }) => useSortingHeader<Employee>(column, 'Department'),
+    cell: ({ row }) => useTruncateCellText(row.getValue('department')),
     enableSorting: true,
     enableGrouping: true,
     meta: {
@@ -42,6 +45,7 @@ const columns = computed<DataTableColumnDef<Employee>[]>(() => [
   {
     accessorKey: 'role',
     header: ({ column }) => useSortingHeader<Employee>(column, 'Role'),
+    cell: ({ row }) => useTruncateCellText(row.getValue('role')),
     enableSorting: true,
     meta: {
       fr: 2,
